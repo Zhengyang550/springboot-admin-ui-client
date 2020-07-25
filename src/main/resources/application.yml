@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  application:
+    name: admin-ui-client
+  #注册当前服务到admin-ui-server服务中
+  boot:
+    admin:
+      client:
+        url: http://localhost:8090
